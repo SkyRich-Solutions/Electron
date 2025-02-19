@@ -1,0 +1,21 @@
+{
+    "name": "skyrich-solutions-with-electron",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "concurrently \"npm run start-server\" \"npm run start-electron\"",
+        "start-server": "cd Server && node StartServer.js",
+        "start-react": "cd Frontend && npm run start -- --no-open",
+        "start-electron": " electron .",
+        "build": "cd Frontend && npm run build"
+    },
+    "dependencies": {
+        "concurrently": "^7.0.0",
+        "wait-on": "^6.0.0",
+        "electron": "^34.2.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
