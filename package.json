@@ -4,7 +4,7 @@
     "description": "",
     "main": "main.js",
     "scripts": {
-        "start": "concurrently \"npm run start-server\" \"npm run start-electron\" \"npm run start-backend",
+        "start": "concurrently \"npm run start-server\" \"npm run start-electron\" ",
         "start-server": "cd Server && node StartServer.js",
         "start-react": "cd Frontend && npm run start -- --no-open",
         "start-backend": "cd Backend && python app.py",
